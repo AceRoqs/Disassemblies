@@ -373,16 +373,16 @@ read_sector:
 ; String Table --------------------------------------------------------------
 
 emsg_invaliddisk:
-db invalid_disk - $ - 1
+    db invalid_disk - $ - 1
 
 emsg_diskioerror:
-db diskioerror - $ - 1
+    db diskioerror - $ - 1
 
 emsg_invaliddisk_dupe:
-db invalid_disk - $ - 1
+    db invalid_disk - $ - 1
 
 emsg_replacedisk:
-db replaced_disk - $ -1
+    db replaced_disk - $ -1
 
 invalid_disk:   db 0dh, 0ah, 'Invalid system disk', 0ffh
 diskioerror:    db 0dh, 0ah, 'Disk I/O error', 0ffh
