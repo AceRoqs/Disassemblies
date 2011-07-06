@@ -388,13 +388,12 @@ invalid_disk:   db 0dh, 0ah, 'Invalid system disk', 0ffh
 diskioerror:    db 0dh, 0ah, 'Disk I/O error', 0ffh
 replaced_disk:  db 0dh, 0ah, 'Replace the disk, and then press any key', 0dh, 0ah, 0
 
-dw 0
-db 'IO      SYS'
-;dw 0
-db 'MSDOS   SYS'
-db 7eh, 1, 0
-db 'WINBOOT SYS'
-dw 0
+    dw 0
+    db 'IO      SYS'
+    db 'MSDOS   SYS'
+    db 7eh, 1, 0
+    db 'WINBOOT SYS'
+    dw 0
 
     dw 0aa55h
 end_bootsector:
